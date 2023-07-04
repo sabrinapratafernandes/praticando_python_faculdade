@@ -21,7 +21,7 @@ else:
 
 # Exercicio 2 ---------------------------------------------------
 
-print('CALCULADORS')
+print('CALCULADORA')
 print('+ Adição')
 print('- Subtração')
 print('* Multiplicação')
