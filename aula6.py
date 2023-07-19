@@ -87,3 +87,5 @@ while True:
 print('Número de vitórias do Jogador 1: {}'.format(resultados[0]))
 print('Número de vitórias do Jogador 2: {}'.format(resultados[1]))
 print('Número de empates: {}'.format(resultados[2]))
+
+

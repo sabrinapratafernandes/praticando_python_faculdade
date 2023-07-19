@@ -1,41 +1,45 @@
-# Exercícios
+# # Exercícios
+#
+# # Criando uma função com docstring
+# def soma(x=0, y=0, z=0):
+#     """
+#     Função que soma até trêsvalores inteiros
+#     :param x: Valor inteiro opcional 1
+#     :param y: Valor inteiro opcional 2
+#     :param z: Valor inteiro opcional 3
+#     """
+#     return x+y+z
+# print(soma(3,2))
+# help(soma)
 
-# Criando uma função com docstring
-def soma(x=0, y=0, z=0):
-    """
-    Função que soma até trêsvalores inteiros
-    :param x: Valor inteiro opcional 1
-    :param y: Valor inteiro opcional 2
-    :param z: Valor inteiro opcional 3
-    """
-    return x+y+z
-print(soma(3,2))
-help(soma)
+# # Exercício 1
+# def valida_int(pergunta, min, max):
+#     x = int(input(pergunta))
+#     while ((x < min) or (x > max)):
+#         x = int(input(pergunta))
+#     return x
+# def fatorial(numero):
+#     """
+#     Calcula a fatorial do número inserido
+#     :param numero: Valor inserido
+#     :return: Fatorial calculado a partir do valor inserido
+#     """
+#     fat = 1
+#     if numero == 0:
+#         return fat
+#     for i in range(1,numero+1,1):
+#         fat *= i
+#     return fat
+#
+# x = valida_int('Digite um valor para calcular a fatorial:', 0, 99999)
+# print('{}! = {}'.format(x, fatorial(x)))
 
-# Exercício 1
+# Exercicio 2
 def valida_int(pergunta, min, max):
     x = int(input(pergunta))
     while ((x < min) or (x > max)):
         x = int(input(pergunta))
     return x
-def fatorial(numero):
-    """
-    Calcula a fatorial do número inserido
-    :param numero: Valor inserido
-    :return: Fatorial calculado a partir do valor inserido
-    """
-    fat = 1
-    if numero == 0:
-        return fat
-    for i in range(1,numero+1,1):
-        fat *= i
-    return fat
-
-x = valida_int('Digite um valor para calcular a fatorial:', 0, 99999)
-print('{}! = {}'.format(x, fatorial(x)))
-
-# Exercicio 2
-
 def criaArquivo(nomeArquivo):
     try:
         a = open(nomeArquivo, 'wt+')
